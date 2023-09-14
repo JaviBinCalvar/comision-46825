@@ -1,27 +1,18 @@
-/*
-tipografias
-font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-colores
-
-**/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-header{
-    background-color: rgb(124, 180, 19);
-    border-style: double;
-    border-color: black;
-    border-width: .1875rem;
-    position: sticky;
-    top: 0;
-}
-.navbar{
+header {
+  background-color: #7cb413;
+  border-style: double;
+  border-color: black;
+  border-width: .1875rem;
+  position: sticky;
+  top: 0; }
+  header h1 {
+    padding-left: 3.125rem; }
+  header ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1.875rem;
@@ -31,180 +22,110 @@ header{
     font-size: 24px;
     justify-content: center;
     font-family: 'Roboto';
-    font-weight: 500;
-}
-.navbar li a{
-    color: black;
-    text-decoration: none;
-    
-}
+    font-weight: 500; }
+    header ul li a {
+      color: black;
+      text-decoration: none; }
+      header ul li a:hover {
+        color: white; }
 
-
-
-.barrageneral h1{
-    padding-left: 3.125rem;
-}
-
-main{
-    background-color: rgb(125, 182, 19);
-    
-    .contenedoruno{
-        display: flex;
-        width: 100%;
-        height: 25rem;
-        background-image: url(../assets/img/imagendefonde.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 100%;
-    }
-
-
-    .contenedoruno div button{
-        background-color: black;
-    }
-    .contenedoruno div button a{
+main {
+  background-color: #7db613; }
+  main .contenedoruno {
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    background-image: url(../assets/img/imagendefonde.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%; }
+    main .contenedoruno div h2 {
+      text-align: center; }
+    main .contenedoruno div button {
+      background-color: black; }
+      main .contenedoruno div button:hover {
+        transform: scale(1.2); }
+      main .contenedoruno div button a {
         text-decoration: none;
-        color: aliceblue;
-    }
-    .contenedoruno div h2{
-        text-align: center;
-    }
-
-    .contenedordos article div a img{
+        color: aliceblue; }
+        main .contenedoruno div button a:hover {
+          color: #e48900; }
+  main .contenedordos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    border-style: double;
+    border-color: black;
+    border-width: .1875rem; }
+    main .contenedordos .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: none;
+      border-style: double;
+      border-color: black;
+      border-width: .0625rem;
+      border-radius: .625rem;
+      width: 30%;
+      text-align: center; }
+      main .contenedordos .cards div a img {
         width: 70%;
         padding: 1.5rem , 0;
-        background-size: cover;
-    }
-    .contenedordos{
-        border-style: double;
-        border-color: black;
-        border-width: .1875rem;
-    }
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        border-style: double;
-        border-color: black;
-        border-width: .0625rem;
-        border-radius: .625rem;
-        width: 30%;
-        text-align: center;
-    }
-    .seccionlogin{
-        border-style: double;
-        border-color: black;
-        border-width: .0625rem;
-        text-align: center;
-    }
-    .imagen{
-        border-style: double;
-        border-color: black;
-        border-width: .0625rem;
-        text-align: center;
+        background-size: cover; }
+  main .seccionlogin, main .imagen {
+    border-style: double;
+    border-color: black;
+    border-width: .0625rem;
+    text-align: center; }
+  main .imagen div img {
+    width: 50%; }
+  main .maincontacto {
+    width: 100%;
+    height: 100%; }
+  main .seccionformulario {
+    background-color: #cad9e6; }
+  main .consulta div input {
+    height: 4rem; }
+  main .imgproductos div button a img {
+    width: 50%; }
 
-    }
-    .maincontacto{
-        width: 100%;
-        height: 100%;
-    }
+footer {
+  background-color: #e48900; }
+  footer .icons {
+    list-style: none; }
+    footer .icons li {
+      text-align: end; }
+  footer .derechosautor p {
+    text-align: center; }
 
-    /*flexbox**/
-    .contenedordos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        
-    }
-    
-        
-    
-}
+@media (max-width: 768px) {
+  .contenedordos {
+    gap: 4rem; }
+  .cards {
+    font-size: 8px; }
+  .derechosautor {
+    font-size: 12px; } }
 
+@media (max-width: 509px) {
+  .navbar {
+    font-size: 18px; }
+  .contenedoruno {
+    width: 100%;
+    height: 15rem; } }
 
+@media (max-width: 425px) {
+  .navbar {
+    font-size: 15px; }
+  .imagenproductos {
+    font-size: 18px; } }
 
-
-
-footer{
-    background-color: rgb(228, 137, 0);
-
-}
-.icons{
-    list-style: none;
-
-}
-.icons li{
-    text-align: end;
-}
-.derechosautor p{
-    text-align: center;
-}
-/* parte contacto**/
-.seccionformulario{
-    background-color: rgb(202, 217, 230);
-
-
-}
-.imagen div img{
-    width: 50%;
-}
-.imgproductos div button a img{
-    width: 50%;
-}
-.consulta div input {
-    height: 4rem;
-    
-}
-
-@media (max-width: 1024px){
-
-}
-
-
-
-@media (max-width: 768px){
-    .contenedordos{
-        gap: 4rem;
-    }
-    .cards{
-        
-        font-size: 8px;
-    }
-    .derechosautor{
-
-        font-size: 12px;
-    }
-}
-@media (max-width: 509px){
-    
-    
-    .navbar{
-        font-size: 18px;
-    }
-
-
-}
-
-@media (max-width: 425px){
-    .navbar{
-        font-size: 15px;
-    }
-    .imagenproductos{
-        font-size: 12px;
-    }
-
-}    
-
-
-@media (max-width: 365px){
-    
-    
-    .navbar{
-        font-size: 10px;
-    }
-    .cards{
-        width: 50%;
-    }
-}
-    
+@media (max-width: 365px) {
+  .navbar {
+    font-size: 10px; }
+  .contenedordos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; } }

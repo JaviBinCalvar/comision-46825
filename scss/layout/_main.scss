@@ -1,0 +1,93 @@
+main{
+    background-color: rgb(125, 182, 19);
+    .contenedoruno{
+        display: flex;
+        width: 100%;
+        height: 25rem;
+        background-image: url(../assets/img/imagendefonde.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+        div{
+            h2{
+                text-align: center;
+            }
+            button{
+                background-color: black;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    &:hover{
+                        color:rgb(228, 137, 0);
+                    } 
+                }
+            }
+        }
+    }
+    .contenedordos{
+        @include flexbox(wrap, center, 1rem);
+        border-style: double;
+        border-color: black;
+        border-width: .1875rem;
+        .cards{
+            @include flexbox(wrap, center, none);
+            border-style: double;
+            border-color: black;
+            border-width: .0625rem;
+            border-radius: .625rem;
+            width: 30%;
+            text-align: center;
+            div{
+                a{
+                    img{
+                        width: 70%;
+                        padding: 1.5rem , 0;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+    .seccionlogin{
+        border-style: double;
+        border-color: black;
+        border-width: .0625rem;
+        text-align: center;
+    }
+    .imagen{
+        @extend .seccionlogin;
+        div{
+            img{
+                width: 50%;
+            }
+        }  
+    }
+    .maincontacto{
+        width: 100%;
+        height: 100%;
+    }
+    .seccionformulario{
+        background-color: rgb(202, 217, 230);
+        }
+        .consulta{
+            div{
+                input{
+                    height: 4rem;
+                }
+            }
+        }
+    .imgproductos{
+        div{
+            button{
+                a{
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

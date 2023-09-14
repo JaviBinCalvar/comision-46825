@@ -1,0 +1,32 @@
+header{
+    background-color: $colorbackground;
+    border-style: double;
+    border-color: black;
+    border-width: .1875rem;
+    position: sticky;
+    top: 0;
+    h1{
+        padding-left: 3.125rem;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.875rem;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+        font-size: 24px;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-weight: 500;
+        li{
+            a{
+                color: $colortexto;
+                text-decoration: none;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}

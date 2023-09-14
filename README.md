@@ -1,5 +1,5 @@
 # Pre entrega Proyecto Desarrollo Web
-## Por Fede Castro hago este curso
+## Pagina Web para emprendimiento propio
 
 ### Herramientas utilizadas
 html
@@ -8,3 +8,7 @@ Flexbox
 Media Query
 Git
 GitHub
+Seo
+Sass
+Grids
+Framework
