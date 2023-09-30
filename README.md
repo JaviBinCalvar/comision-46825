@@ -12,3 +12,4 @@ Seo
 Sass
 Grids
 Framework
+SEO

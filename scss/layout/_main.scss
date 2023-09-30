@@ -1,5 +1,7 @@
 main{
     background-color: rgb(125, 182, 19);
+    width: 100vw;
+    
     .contenedoruno{
         display: flex;
         width: 100%;
@@ -56,9 +58,11 @@ main{
         border-color: black;
         border-width: .0625rem;
         text-align: center;
+        height: 30vh;
     }
     .imagen{
         @extend .seccionlogin;
+        height: 80vh;
         div{
             img{
                 width: 50%;
@@ -68,8 +72,21 @@ main{
     .maincontacto{
         width: 100%;
         height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
     .seccionformulario{
+        display: grid;
+        grid-template-areas: 
+            "main"
+            ;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 80vh;
         background-color: rgb(202, 217, 230);
         }
         .consulta{
@@ -80,8 +97,11 @@ main{
             }
         }
     .imgproductos{
+        
         div{
+            
             button{
+                background-color: rgb(70, 119, 14);
                 a{
                     img{
                         width: 50%;
